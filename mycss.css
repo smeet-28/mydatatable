@@ -1,0 +1,19 @@
+.dataTables_wrapper{
+    background-color: antiquewhite;
+    padding: 15px;
+    overflow: scroll;
+}
+
+.b{
+    position: relative;
+    padding: inherit;
+    font-weight: lighter;
+    left: 25px;
+}
+.c{
+    text-align: center;
+}
+
+.cc{
+    text-align: none;
+}

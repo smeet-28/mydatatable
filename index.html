@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <title>DataTables</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Datatable CSS -->
+        <link href='DataTables/datatables.min.css' rel='stylesheet' type='text/css'>
+        
+        <!--Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+        
+        <!-- Print CSS-->
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css">
+        
+        <!-- own CSS-->
+        <link rel="stylesheet" href="mycss.css">
+    </head>
+    <body >
+
+        <div >
+            
+            <!-- Table -->
+            <table id='empTable' class='display dataTable' data-toggle="table" data-show-print="true" data-show-export="true" data-show-toggle="true" data-show-fullscreen="true" data-toggle="table">
+                <thead>
+                    <tr class="c">
+                        <th>Roll No</th>
+                        <th>Student FName</th>
+                        <th>Student LName</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th><input type="checkbox" class='checkall' id='checkall'>
+                            <input type="button" id='delete_record' class="btn btn-outline-danger btn-sm b" value='Delete' >
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="c"></tbody>
+            </table>
+        </div>
+        
+        <!-- Script -->
+        
+        <!-- jQuery Library -->
+        <script src="jquery-3.3.1.min.js"></script>
+        
+        <!-- Datatable JS -->
+        <script src="DataTables/datatables.min.js"></script>
+        
+        <!-- Print JS-->
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script>
+        
+        <!-- download script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
+        <!-- own script -->
+        <script src="myscript.js"></script>
+    </body>
+
+</html>
